@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { CheckCircle2, Terminal, Sparkles, Code2 } from "lucide-react";
 import {
   ReactIcon,
   NextjsIcon,
@@ -32,7 +31,7 @@ export function SystemArchitectureVisual() {
       </div>
 
       {/* Code Snippet */}
-      <div className="p-5 sm:p-6 space-y-2.5 text-slate-300 leading-relaxed overflow-x-auto">
+      <div className="p-5 sm:p-6 space-y-2 text-slate-300 leading-relaxed overflow-x-auto">
         <div>
           <span className="text-violet-400 font-semibold">export const</span>{" "}
           <span className="text-sky-300">developer</span> = &#123;
@@ -49,11 +48,11 @@ export function SystemArchitectureVisual() {
           </div>
           <div>
             <span className="text-slate-400">experience:</span>{" "}
-            <span className="text-sky-300">&quot;4+ Years&quot;</span>,
+            <span className="text-sky-300">&quot;4+ Years Professional (ULTS)&quot;</span>,
           </div>
           <div>
-            <span className="text-slate-400">currentCompany:</span>{" "}
-            <span className="text-emerald-300">&quot;ULTS&quot;</span>,
+            <span className="text-slate-400">education:</span>{" "}
+            <span className="text-violet-300">&quot;M.Tech (8.76 CGPA) &amp; B.Tech&quot;</span>,
           </div>
           <div>
             <span className="text-slate-400">frontend:</span> [
@@ -68,21 +67,23 @@ export function SystemArchitectureVisual() {
             <span className="text-emerald-300">&quot;Node.js&quot;</span>,{" "}
             <span className="text-emerald-300">&quot;NestJS&quot;</span>,{" "}
             <span className="text-emerald-300">&quot;PostgreSQL&quot;</span>,{" "}
-            <span className="text-emerald-300">&quot;Prisma&quot;</span>
+            <span className="text-emerald-300">&quot;Prisma&quot;</span>,{" "}
+            <span className="text-emerald-300">&quot;Docker&quot;</span>
             ],
           </div>
           <div>
-            <span className="text-slate-400">focus:</span> [
-            <span className="text-indigo-300">&quot;Reusable UI Architecture&quot;</span>,{" "}
-            <span className="text-indigo-300">&quot;Complex Dashboards&quot;</span>,{" "}
-            <span className="text-indigo-300">&quot;REST APIs&quot;</span>
-            ],
+            <span className="text-slate-400">contact:</span> &#123;{" "}
+            <span className="text-slate-400">email:</span>{" "}
+            <span className="text-sky-300">&quot;ashlypj@outlook.com&quot;</span>,{" "}
+            <span className="text-slate-400">phone:</span>{" "}
+            <span className="text-sky-300">&quot;+91 9562022861&quot;</span>{" "}
+            &#125;,
           </div>
           <div>
-            <span className="text-slate-400">locationPreferences:</span> [
-            <span className="text-amber-300">&quot;UAE&quot;</span>,{" "}
-            <span className="text-amber-300">&quot;Saudi Arabia&quot;</span>,{" "}
+            <span className="text-slate-400">targetRegions:</span> [
             <span className="text-amber-300">&quot;Qatar&quot;</span>,{" "}
+            <span className="text-amber-300">&quot;Saudi Arabia&quot;</span>,{" "}
+            <span className="text-amber-300">&quot;UAE&quot;</span>,{" "}
             <span className="text-amber-300">&quot;Remote&quot;</span>
             ],
           </div>
@@ -91,7 +92,7 @@ export function SystemArchitectureVisual() {
         <div>&#125;;</div>
       </div>
 
-      {/* Quick Brand Badges Strip */}
+      {/* Brand Badges Strip */}
       <div className="px-5 py-3 bg-slate-950/50 border-t border-slate-800/80 flex items-center justify-between text-slate-400 text-[11px]">
         <div className="flex items-center gap-3">
           <ReactIcon className="w-4 h-4" />
@@ -102,7 +103,7 @@ export function SystemArchitectureVisual() {
           <NestjsIcon className="w-4 h-4" />
           <PostgresIcon className="w-4 h-4" />
         </div>
-        <span className="text-slate-500 font-sans hidden sm:inline">TypeScript Strict</span>
+        <span className="text-slate-500 font-sans hidden sm:inline">linkedin.com/in/ashlyjoy812</span>
       </div>
     </div>
   );

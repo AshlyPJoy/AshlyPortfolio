@@ -24,7 +24,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Ashly P Joy | Full Stack Developer | React, Next.js, Angular & Node.js",
   description:
-    "Ashly P Joy is a Full Stack Developer with 4+ years of experience in React.js, Next.js, Angular, TypeScript, Node.js, NestJS and PostgreSQL. Explore projects, technical expertise and professional experience.",
+    "Ashly P Joy is a Full Stack Developer with 4+ years of experience in React.js, Next.js, Angular, TypeScript, Node.js, NestJS, and PostgreSQL. Explore projects, technical expertise and professional experience at ULTS.",
   keywords: [
     "Ashly P Joy",
     "Full Stack Developer",
@@ -34,14 +34,10 @@ export const metadata: Metadata = {
     "JavaScript Developer",
     "TypeScript Developer",
     "Node.js Developer",
-    "Frontend Developer",
-    "Software Engineer",
-    "NestJS",
-    "PostgreSQL",
-    "Prisma ORM",
-    "Web Developer Qatar",
-    "Software Engineer Dubai UAE",
-    "Full Stack Developer Saudi Arabia",
+    "NestJS Developer",
+    "Software Engineer Qatar",
+    "Full Stack Developer Dubai UAE",
+    "Developer Saudi Arabia",
   ],
   authors: [{ name: "Ashly P Joy" }],
   creator: "Ashly P Joy",
@@ -51,14 +47,14 @@ export const metadata: Metadata = {
     url: "https://ashlypjoy.dev",
     title: "Ashly P Joy | Full Stack Developer | React, Next.js, Angular & Node.js",
     description:
-      "Full Stack Developer with 4+ years of experience specializing in React, Next.js, Angular, TypeScript, Node.js, and NestJS. Scalable web applications & modern digital experiences.",
+      "Full Stack Developer with 4+ years of experience specializing in React, Next.js, Angular, TypeScript, Node.js, and NestJS.",
     siteName: "Ashly P Joy Portfolio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Ashly P Joy | Full Stack Developer",
     description:
-      "Full Stack Developer with 4+ years of experience building modern web applications with React, Next.js, Angular, and Node.js.",
+      "Full Stack Developer with 4+ years of experience building scalable web applications with React, Next.js, Angular, and Node.js.",
   },
   robots: {
     index: true,
@@ -78,10 +74,20 @@ export default function RootLayout({
     jobTitle: "Full Stack Developer",
     worksFor: {
       "@type": "Organization",
-      name: "ULTS",
+      name: "UL Technology Solutions (ULTS)",
     },
-    description:
-      "Full Stack Developer with 4+ years of experience building responsive, scalable and user-friendly web applications using React.js, Next.js, Angular, Node.js, and NestJS.",
+    email: PORTFOLIO_DATA.personal.contact.email,
+    telephone: PORTFOLIO_DATA.personal.contact.phone,
+    alumniOf: [
+      {
+        "@type": "EducationalOrganization",
+        name: "TKM College of Engineering, Kollam",
+      },
+      {
+        "@type": "EducationalOrganization",
+        name: "College of Engineering, Kottarakkara",
+      },
+    ],
     knowsAbout: [
       "React.js",
       "Next.js",
@@ -89,11 +95,12 @@ export default function RootLayout({
       "TypeScript",
       "Node.js",
       "NestJS",
+      "Express",
       "PostgreSQL",
       "Prisma ORM",
-      "Redux Toolkit",
-      "Tailwind CSS",
-      "REST API Development",
+      "Docker",
+      "Redux",
+      "Vitest",
     ],
     sameAs: [
       PORTFOLIO_DATA.personal.contact.linkedin,

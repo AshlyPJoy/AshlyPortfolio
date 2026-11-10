@@ -45,6 +45,7 @@ export interface EducationItem {
   period: string;
   status: string;
   location: string;
+  grade?: string;
   description: string;
   highlights: string[];
 }
@@ -56,39 +57,42 @@ export const PORTFOLIO_DATA = {
     headline: "Building Scalable Web Applications & Exceptional Digital Experiences.",
     experienceYears: "4+ Years",
     tagline:
-      "Full Stack Developer with 4+ years of experience specializing in React, Next.js, Angular and Node.js. Passionate about building modern, scalable and user-focused web applications.",
+      "Full Stack Developer with 4+ years of experience specializing in React, Next.js, Angular, Node.js, and NestJS. Passionate about building modern, scalable, and user-focused web applications.",
     aboutBio: [
-      "I'm a passionate Full Stack Developer with over 4 years of experience in building modern web applications. My expertise spans frontend technologies such as React.js, Next.js and Angular, along with backend development using Node.js and NestJS.",
-      "I enjoy creating reusable components, developing complex forms, integrating APIs and building interactive dashboards. I focus on writing clean, maintainable code and delivering responsive applications with excellent user experiences.",
-      "I'm continuously expanding my technical knowledge and exploring modern development practices to build better software solutions.",
+      "I am a Full Stack Developer with over 4 years of experience building responsive, scalable and user-friendly web applications. I specialize in modern frontend development using React.js, Next.js and Angular, with strong expertise in JavaScript, TypeScript, Redux and REST API integration.",
+      "I also have solid backend development experience with Node.js, NestJS, Express, PostgreSQL and Prisma ORM. My professional journey includes developing reusable UI components, complex forms with validation, interactive dashboards, API-driven applications, and data management systems.",
+      "I hold an M.Tech in Communication Systems from TKM College of Engineering (CGPA: 8.76) and a B.Tech in Electronics and Communication from College of Engineering Kottarakkara (CGPA: 7.57). I enjoy solving technical challenges, writing maintainable code, and collaborating with cross-functional teams.",
     ],
     availability: {
       status: "Actively Exploring Opportunities",
       relocation: "Ready for Onsite / Relocation to UAE, Saudi Arabia, Qatar & International Remote",
-      badgeText: "Open to International Opportunities (GCC & Global)",
+      badgeText: "Open to Relocation in Qatar, KSA, UAE & Remote",
     },
     contact: {
-      email: "ashlypjoy.dev@gmail.com", // Editable placeholder
-      linkedin: "https://www.linkedin.com/in/ashly-p-joy", // Editable placeholder
-      github: "https://github.com/ashlypjoy", // Editable placeholder
-      location: "India (Open to UAE, KSA, Qatar & Global Relocation)",
+      email: "ashlypj@outlook.com",
+      secondaryEmail: "ashlypjoy94@gmail.com",
+      phone: "+919562022861",
+      whatsappUrl: "https://wa.me/919562022861",
+      linkedin: "https://www.linkedin.com/in/ashlyjoy812",
+      github: "https://github.com/ashlypjoy",
+      location: "Kerala, India (Open to Qatar, KSA, UAE & Global Relocation)",
       resumeUrl: "/resume.pdf",
     },
     highlights: [
       {
         value: "4+ Years",
         label: "Professional Experience",
-        description: "Designing and developing robust enterprise web applications at scale",
+        description: "Hands-on software development at UL Technology Solutions (ULTS)",
       },
       {
         value: "Full Stack",
         label: "Frontend & Backend",
-        description: "Seamlessly connecting reactive UI design systems with structured API microservices",
+        description: "End-to-end delivery: React, Next.js, Angular, Node.js, NestJS, PostgreSQL & Prisma",
       },
       {
-        value: "Modern Stack",
-        label: "React · Next.js · Angular · Node",
-        description: "Enterprise component architecture, high-performance state, and resilient backends",
+        value: "Postgraduate",
+        label: "M.Tech & B.Tech",
+        description: "M.Tech from TKM College of Engineering (8.76 CGPA) & B.Tech from CE Kottarakkara",
       },
     ],
   },
@@ -104,7 +108,7 @@ export const PORTFOLIO_DATA = {
         { name: "TypeScript", level: "Core Expert", tag: "Type-Safe" },
         { name: "JavaScript (ES6+)", level: "Core Expert", tag: "Modern JS" },
         { name: "HTML5", level: "Core Expert", tag: "Semantic" },
-        { name: "CSS3", level: "Core Expert", tag: "Modern Layouts" },
+        { name: "CSS3", level: "Core Expert", tag: "Responsive" },
       ],
     },
     {
@@ -113,6 +117,7 @@ export const PORTFOLIO_DATA = {
       skills: [
         { name: "Node.js", level: "Core Expert", tag: "Runtime" },
         { name: "NestJS", level: "Proficient", tag: "Architecture" },
+        { name: "Express", level: "Core Expert", tag: "Backend Framework" },
         { name: "REST API Development", level: "Core Expert", tag: "Design & Specs" },
         { name: "API Integration", level: "Core Expert", tag: "Third-party & Internal" },
       ],
@@ -135,9 +140,9 @@ export const PORTFOLIO_DATA = {
         { name: "Redux", level: "Core Expert", tag: "State Arch" },
         { name: "Redux Toolkit", level: "Core Expert", tag: "RTK & Query" },
         { name: "Redux Saga", level: "Proficient", tag: "Side Effects" },
-        { name: "React Hooks", level: "Core Expert", tag: "Custom Hooks" },
+        { name: "NgRx", level: "Proficient", tag: "Angular State" },
+        { name: "RxJS", level: "Proficient", tag: "Reactive Streams" },
         { name: "React Hook Form", level: "Core Expert", tag: "Validation" },
-        { name: "Context API", level: "Core Expert", tag: "Scoped State" },
       ],
     },
     {
@@ -150,14 +155,15 @@ export const PORTFOLIO_DATA = {
       ],
     },
     {
-      title: "Developer Tools & DevOps",
+      title: "Developer Tools & Testing",
       description: "Modern workflows, automated testing, containerization, and version control",
       skills: [
         { name: "Git", level: "Core Expert", tag: "VCS" },
         { name: "GitHub", level: "Core Expert", tag: "CI/CD & Review" },
-        { name: "VS Code", level: "Core Expert", tag: "IDE" },
+        { name: "Docker", level: "Proficient", tag: "Compose & Containers" },
+        { name: "Vitest", level: "Proficient", tag: "Unit & Component Test" },
         { name: "Postman", level: "Core Expert", tag: "API Testing" },
-        { name: "Docker", level: "Working Knowledge", tag: "Containers" },
+        { name: "VS Code", level: "Core Expert", tag: "IDE" },
       ],
     },
   ] as SkillCategory[],
@@ -186,7 +192,7 @@ export const PORTFOLIO_DATA = {
         "An asset lifecycle management application designed to manage assets, product information and master data efficiently.",
       fullOverview:
         "AssetNexus is a comprehensive enterprise asset management system engineered to oversee the complete lifecycle of corporate assets, equipment, and digital products. Designed with a clean multi-tier architecture, it provides structured hierarchies for manufacturers, brands, sub-brands, and models, coupled with robust audit trails and master data management.",
-      technologies: ["React.js", "TypeScript", "NestJS", "PostgreSQL", "Prisma ORM", "REST API"],
+      technologies: ["React.js", "TypeScript", "NestJS", "PostgreSQL", "Prisma ORM", "Docker"],
       keyFeatures: [
         "Asset lifecycle management from acquisition to retirement.",
         "Master data management ensuring enterprise-wide data consistency.",
@@ -204,7 +210,6 @@ export const PORTFOLIO_DATA = {
       role: "Full Stack Engineer (Frontend architecture, API contracts, NestJS backend services & Prisma schema design)",
       metricsOrScope: "Enterprise Grade Master Data Management System",
       mockupType: "assetnexus",
-      // URLs set to undefined to trigger interactive project detail modal & clear placeholder indicator rather than broken external links
       liveUrl: undefined,
       githubUrl: undefined,
     },
@@ -251,7 +256,7 @@ export const PORTFOLIO_DATA = {
         "A responsive dashboard application featuring interactive data visualization and efficient data management.",
       fullOverview:
         "An enterprise-level operational dashboard designed to ingest and visualize complex business metrics in real time. Features reactive data filtering, multi-column sortable data tables with pagination, statistical summaries, and dynamic charts engineered for optimal rendering performance across devices.",
-      technologies: ["React.js", "TypeScript", "Redux Toolkit", "REST APIs", "Tailwind CSS", "Recharts"],
+      technologies: ["React.js", "TypeScript", "Redux Toolkit", "REST APIs", "Tailwind CSS"],
       keyFeatures: [
         "Interactive dashboards with customizable analytics widgets.",
         "High-performance data tables with multi-column sorting and filtering.",
@@ -262,8 +267,8 @@ export const PORTFOLIO_DATA = {
       ],
       architectureHighlights: [
         "Normalized Redux state slice for high-throughput data streams",
-        "Virtual scroll optimization for large data tables (10,000+ records)",
-        "Responsive grid layout adapting effortlessly across desktop, tablet, and mobile",
+        "Virtual scroll optimization for large data tables",
+        "Responsive grid layout adapting effortlessly across devices",
         "Comprehensive REST API error handling and retry mechanism",
       ],
       role: "Frontend Engineer (Component architecture, Redux store design, API integration, performance tuning)",
@@ -276,56 +281,117 @@ export const PORTFOLIO_DATA = {
 
   experience: [
     {
-      company: "ULTS",
+      company: "UL Technology Solutions (ULTS)",
       role: "Developer Analyst",
-      period: "4+ Years Professional Experience",
-      experienceYears: "4+ Years",
-      location: "India (Global Projects Delivery)",
+      period: "12/2024 – Present",
+      experienceYears: "Present (4+ Years Total)",
+      location: "Kerala, India",
       description:
-        "Contributing to the development of modern web applications with a focus on reusable UI architecture, frontend engineering, backend integration and scalable application development.",
+        "Developing scalable RESTful APIs, backend services with Node.js, Nest.js, Express, PostgreSQL, and Prisma ORM, containerized with Docker. Engineering responsive, data-intensive interfaces using React.js and Next.js with Redux.",
       responsibilities: [
-        "Developing frontend applications using React.js, Angular and TypeScript.",
-        "Building reusable, scalable UI components adhering to design system principles.",
-        "Creating complex forms with robust schema validation workflows.",
-        "Developing dashboards and interactive data tables with real-time filtering.",
-        "Integrating REST APIs and architecting resilient client-server data synchronization.",
-        "Managing predictable application state across enterprise-scale frontend workflows.",
-        "Contributing to full-stack application development across both frontend and backend layers.",
-        "Working with modern development tools, Git version control, and containerized environments.",
-        "Improving application performance, accessibility, and long-term code maintainability.",
-        "Collaborating with cross-functional teams, developers, designers, and project stakeholders.",
+        "Developed scalable RESTful APIs and backend services using Node.js, Nest.js, and Express, with PostgreSQL and Prisma for efficient data management.",
+        "Designed and managed relational database schemas, migrations, and data operations using PostgreSQL and Prisma ORM.",
+        "Integrated frontend and backend services through RESTful APIs, implementing validation, error handling, and business logic.",
+        "Containerized frontend, backend, and database services using Docker Compose, maintaining consistent local and staging development environments.",
+        "Optimized backend data processing and Node.js stream handling to improve application performance and stability.",
+        "Developed responsive, data-intensive interfaces using React.js and Next.js, with Redux for application state management.",
+        "Implemented dependent data flows, forms, dashboards, tables, filters, and reusable UI components for asset management workflows.",
+        "Developed unit and component tests using Vitest to improve application reliability and maintain code quality.",
+        "Used Git for version control and collaboration and Jira for task management and Agile sprint planning.",
+      ],
+      techStack: [
+        "Node.js",
+        "NestJS",
+        "Express",
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Prisma",
+        "Docker Compose",
+        "Redux",
+        "Vitest",
+        "Git",
+      ],
+    },
+    {
+      company: "UL Technology Solutions (ULTS)",
+      role: "Associate Developer",
+      period: "12/2022 – 11/2024",
+      experienceYears: "2 Years",
+      location: "Kerala, India",
+      description:
+        "Developed and maintained responsive web applications using React.js, Angular, HTML, CSS, Bootstrap, and Material-UI. Implemented state management using Redux and NgRx.",
+      responsibilities: [
+        "Developed and maintained responsive web applications using React.js, Angular, HTML, CSS, Bootstrap, and Material-UI.",
+        "Built reusable and scalable UI components following maintainable coding practices.",
+        "Translated wireframes and design mockups into interactive web applications.",
+        "Integrated frontend applications with RESTful APIs and web services.",
+        "Implemented application state management using Redux and NgRx.",
+        "Optimized frontend performance by improving rendering efficiency and reducing load times.",
+        "Wrote and maintained unit and component tests using Vitest.",
       ],
       techStack: [
         "React.js",
-        "Next.js",
         "Angular",
         "TypeScript",
-        "JavaScript (ES6+)",
-        "Node.js",
-        "NestJS",
-        "PostgreSQL",
-        "Prisma",
-        "Redux Toolkit",
-        "Tailwind CSS",
-        "Docker",
+        "JavaScript",
+        "Redux",
+        "NgRx",
+        "Bootstrap",
+        "Material-UI",
+        "REST APIs",
       ],
+    },
+    {
+      company: "UL Technology Solutions (ULTS)",
+      role: "Software Development Intern",
+      period: "08/2022 – 11/2022",
+      experienceYears: "4 Months",
+      location: "Kerala, India",
+      description:
+        "Assisted in developing responsive web applications using HTML, CSS, JavaScript, and Angular. Converted UX/UI designs into accessible, responsive interfaces.",
+      responsibilities: [
+        "Assisted in developing and maintaining responsive web applications using HTML, CSS, JavaScript, and Angular.",
+        "Built reusable UI components and implemented responsive layouts based on design requirements.",
+        "Integrated frontend screens with RESTful APIs and handled API responses and basic error handling.",
+        "Worked with JavaScript and TypeScript to implement application features and improve code maintainability.",
+      ],
+      techStack: ["Angular", "JavaScript", "TypeScript", "HTML5", "CSS3", "Git"],
     },
   ] as ExperienceItem[],
 
   education: [
     {
-      degree: "Bachelor of Technology (B.Tech / B.E.)",
-      field: "Information Technology / Computer Science",
-      institution: "Accredited University / Engineering Institute", // Editable placeholder
-      period: "Graduate Degree", // Editable placeholder
+      degree: "M.Tech in Communication Systems",
+      field: "Electronics & Communication Engineering",
+      institution: "TKM College of Engineering, Kollam",
+      period: "08/2017 – 06/2019",
+      grade: "CGPA: 8.76 / 10",
       status: "Completed",
-      location: "India",
+      location: "Kerala, India",
       description:
-        "Core foundational coursework in Software Engineering, Data Structures & Algorithms, Database Management Systems, Computer Networks, and Object-Oriented System Design.",
+        "Advanced postgraduate degree with deep specialization in Communication Systems, Signal Processing, and Computational Algorithms.",
       highlights: [
-        "Strong foundation in Computer Science principles and Algorithms",
-        "Advanced Database Management & Distributed System fundamentals",
-        "Software Engineering lifecycle, testing, and modern Web Development",
+        "Graduated with High Academic Distinction (CGPA: 8.76)",
+        "Advanced Signal Processing & Distributed Communication Systems",
+        "System Architecture, Digital Communications & Algorithmic Analysis",
+      ],
+    },
+    {
+      degree: "B.Tech in Electronics and Communication",
+      field: "Electronics & Communication Engineering",
+      institution: "College of Engineering, Kottarakkara",
+      period: "08/2012 – 04/2016",
+      grade: "CGPA: 7.57 / 10",
+      status: "Completed",
+      location: "Kerala, India",
+      description:
+        "Undergraduate degree focusing on core Computer Science, Microprocessor Architectures, Data Networks, and Digital Systems.",
+      highlights: [
+        "First Class Engineering Degree (CGPA: 7.57)",
+        "Microprocessors, Computer Architecture & Digital Circuits",
+        "Object-Oriented Programming, Data Networks & Embedded Software",
       ],
     },
   ] as EducationItem[],
