@@ -19,31 +19,24 @@ export function SectionHeading({
   return (
     <div
       className={cn(
-        "flex flex-col mb-12 sm:mb-16",
+        "flex flex-col mb-8 sm:mb-10",
         align === "center" ? "items-center text-center" : "items-start text-left",
         className
       )}
     >
       {badge && (
-        <div className="inline-flex items-center gap-2 px-3 py-1 mb-4 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-400 text-xs font-medium tracking-wide uppercase">
-          <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse" />
+        <span className="inline-block px-2.5 py-0.5 mb-2.5 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-400 text-[11px] font-mono uppercase tracking-wider">
           {badge}
-        </div>
+        </span>
       )}
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
+      <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
         {title}
       </h2>
       {subtitle && (
-        <p className="mt-4 max-w-2xl text-base sm:text-lg text-slate-400 leading-relaxed">
+        <p className="mt-2 max-w-xl text-xs sm:text-sm text-slate-400 leading-relaxed">
           {subtitle}
         </p>
       )}
-      <div
-        className={cn(
-          "h-1 w-20 mt-6 rounded-full bg-gradient-to-r from-sky-400 via-indigo-500 to-transparent",
-          align === "center" ? "mx-auto" : ""
-        )}
-      />
     </div>
   );
 }
