@@ -98,34 +98,6 @@ export function HeroSection() {
             <span>Get in Touch</span>
           </button>
         </div>
-
-        {/* 3 Balanced Metric Highlights */}
-        <div className="mt-14 pt-10 border-t border-slate-800/80 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 w-full max-w-2xl text-center">
-          <div>
-            <div className="text-2xl sm:text-3xl font-extrabold text-white font-mono">
-              4+ Years
-            </div>
-            <div className="text-xs text-slate-400 mt-1">
-              Professional Software Development
-            </div>
-          </div>
-          <div>
-            <div className="text-2xl sm:text-3xl font-extrabold text-sky-400 font-mono">
-              ULTS
-            </div>
-            <div className="text-xs text-slate-400 mt-1">
-              Developer Analyst (Enterprise Web)
-            </div>
-          </div>
-          <div>
-            <div className="text-2xl sm:text-3xl font-extrabold text-white font-mono">
-              M.Tech &bull; 8.76
-            </div>
-            <div className="text-xs text-slate-400 mt-1">
-              TKM College of Engineering
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
