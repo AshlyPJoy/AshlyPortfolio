@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ashly P Joy - Full Stack Developer Resume (GCC Optimized)</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 8mm 11mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1a202c;
+      background: #ffffff;
+      line-height: 1.34;
+      font-size: 9.2pt;
+    }
+
+    /* Header */
+    .header {
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 6px;
+      margin-bottom: 8px;
+    }
+    .name-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    h1 {
+      font-size: 19pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+    }
+    .title-tag {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #0284c7;
+    }
+    .contact-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 8.3pt;
+      color: #475569;
+      margin-top: 3px;
+    }
+    .contact-line a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .relocation-badge {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 2px 7px;
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      border-radius: 4px;
+      font-size: 8.2pt;
+      color: #0369a1;
+      font-weight: 600;
+    }
+
+    /* Section Headings */
+    .section-title {
+      font-size: 9.8pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 2px;
+      margin-top: 8px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .section-title::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 10px;
+      background: #0284c7;
+      border-radius: 2px;
+    }
+
+    p {
+      color: #334155;
+      margin-bottom: 4px;
+      font-size: 8.8pt;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5px;
+      font-size: 8.5pt;
+    }
+    .skill-row {
+      display: flex;
+    }
+    .skill-category {
+      width: 140px;
+      font-weight: 700;
+      color: #0f172a;
+      flex-shrink: 0;
+    }
+    .skill-items {
+      color: #334155;
+    }
+
+    /* Experience */
+    .experience-item {
+      margin-bottom: 7px;
+    }
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 9.2pt;
+    }
+    .exp-company {
+      font-weight: 800;
+      color: #0f172a;
+    }
+    .exp-role {
+      font-weight: 700;
+      color: #0284c7;
+    }
+    .exp-dates {
+      font-weight: 600;
+      color: #64748b;
+      font-size: 8.2pt;
+      font-family: monospace;
+    }
+    .exp-location {
+      font-size: 8pt;
+      color: #64748b;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 2px;
+    }
+    li {
+      position: relative;
+      padding-left: 11px;
+      margin-bottom: 2.5px;
+      font-size: 8.5pt;
+      color: #334155;
+      line-height: 1.32;
+    }
+    li::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      color: #0284c7;
+      font-weight: bold;
+    }
+    li strong {
+      color: #0f172a;
+    }
+
+    /* Projects */
+    .project-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 3px solid #0284c7;
+      padding: 5px 8px;
+      border-radius: 4px;
+      margin-bottom: 5px;
+    }
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1.5px;
+    }
+    .project-title {
+      font-weight: 800;
+      color: #0f172a;
+      font-size: 9pt;
+    }
+    .project-tech {
+      font-size: 7.8pt;
+      font-weight: 600;
+      color: #0369a1;
+      font-family: monospace;
+    }
+    .project-desc {
+      font-size: 8.3pt;
+      color: #334155;
+      margin-bottom: 2px;
+    }
+
+    /* Education */
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+      font-size: 8.5pt;
+    }
+    .edu-title {
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .edu-inst {
+      color: #475569;
+    }
+    .edu-grade {
+      font-weight: 700;
+      color: #059669;
+    }
+    .edu-dates {
+      color: #64748b;
+      font-family: monospace;
+      font-size: 8pt;
+    }
+
+    /* Controlled page break */
+    .page-break {
+      page-break-before: always;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== PAGE 1 ==================== -->
+  <div class="page">
+    <div class="header">
+      <div class="name-row">
+        <h1>ASHLY P JOY</h1>
+        <span class="title-tag">Full Stack Developer | 4+ Years Experience</span>
+      </div>
+      <div class="contact-line">
+        <span>📧 <a href="mailto:ashlypj@outlook.com">ashlypj@outlook.com</a></span>
+        <span>📱 <a href="tel:+919562022861">+91 9562022861</a> (WhatsApp)</span>
+        <span>🔗 <a href="https://linkedin.com/in/ashlyjoy812">linkedin.com/in/ashlyjoy812</a></span>
+        <span>📍 Kerala, India</span>
+      </div>
+      <div class="relocation-badge">
+        🎯 <strong>Availability:</strong> 15–30 Days (Immediate) &nbsp;|&nbsp; <strong>GCC Relocation:</strong> Ready for Relocation to UAE, Saudi Arabia, Qatar &amp; Global Remote
+      </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="section-title">Professional Summary</div>
+    <p>
+      Results-driven <strong>Full Stack Developer with 4+ years of professional experience</strong> engineering responsive, scalable, and secure web applications across enterprise and government sectors. Proven track record at <strong>UL Technology Solutions (ULTS)</strong> architecting mission-critical platforms, including <strong>K-SMART</strong> (statewide e-governance for Kerala Local Self-Government Institutions), <strong>UISP</strong> (Unified Identity Security Platform), and <strong>HIMS</strong> (Hospital Information Management System). Strong expertise in modern frontend architectures (<strong>React.js, Next.js, Angular 8–15+</strong>), state management (<strong>Redux, Redux Saga, NgRx</strong>), and backend API engineering (<strong>Node.js, NestJS, Express, PostgreSQL, Prisma ORM</strong>). Committed to clean architecture, Core Web Vitals optimization, and Agile delivery.
+    </p>
+
+    <!-- Technical Skills -->
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-row">
+        <span class="skill-category">Frontend Engineering:</span>
+        <span class="skill-items">React.js, Next.js (App Router), Angular (8–15+), TypeScript, JavaScript (ES6+), HTML5, CSS3</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-category">Backend &amp; APIs:</span>
+        <span class="skill-items">Node.js, NestJS, Express.js, RESTful API Development, Microservices Architecture</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-category">State Management:</span>
+        <span class="skill-items">Redux, Redux Toolkit, Redux Saga, NgRx, RxJS, Context API</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-category">UI Frameworks &amp; Styling:</span>
+        <span class="skill-items">Tailwind CSS, Chakra UI, PrimeNG, Angular Material, Bootstrap, Material-UI</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-category">Databases &amp; ORM:</span>
+        <span class="skill-items">PostgreSQL, Prisma ORM, SQL, Relational Schema Design, Database Migrations</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-category">DevOps, Testing &amp; Tools:</span>
+        <span class="skill-items">Docker Compose, Vitest (Unit/Component Testing), Git, GitHub, Jira (Agile/Scrum), Postman, VS Code</span>
+      </div>
+    </div>
+
+    <!-- Professional Experience -->
+    <div class="section-title">Professional Experience</div>
+    
+    <div class="experience-item">
+      <div class="exp-header">
+        <div>
+          <span class="exp-company">UL Technology Solutions (ULTS)</span> &mdash; <span class="exp-role">Developer Analyst</span>
+        </div>
+        <span class="exp-dates">12/2024 – Present</span>
+      </div>
+      <div class="exp-location">Kerala, India | Full-Stack Engineering &amp; Architecture</div>
+      <ul>
+        <li><strong>Scalable Full-Stack Engineering:</strong> Architect and develop responsive, data-intensive web applications using <strong>React.js</strong> and <strong>Next.js</strong>, coupled with backend RESTful APIs using <strong>Node.js, NestJS, and Express</strong>.</li>
+        <li><strong>Relational Data &amp; Database Architecture:</strong> Design and maintain PostgreSQL schemas, type-safe data models, and migration pipelines using <strong>Prisma ORM</strong> for high-throughput business applications.</li>
+        <li><strong>Enterprise Workflows &amp; Dashboards:</strong> Implemented dependent data flows, complex multi-step validation forms, interactive data tables, and dynamic filtering for asset management and public governance workflows.</li>
+        <li><strong>Containerization &amp; DevOps:</strong> Containerized frontend, backend, and database microservices using <strong>Docker Compose</strong>, ensuring identical local, staging, and production environments.</li>
+        <li><strong>Performance Tuning:</strong> Optimized backend stream handling and frontend bundle sizes via code splitting and memoization, achieving <strong>~35% faster page render times</strong> and excellent Core Web Vitals.</li>
+        <li><strong>Quality &amp; Testing:</strong> Developed comprehensive unit and component test suites using <strong>Vitest</strong> to maintain code reliability and prevent regression defects across sprint releases.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="exp-header">
+        <div>
+          <span class="exp-company">UL Technology Solutions (ULTS)</span> &mdash; <span class="exp-role">Associate Developer</span>
+        </div>
+        <span class="exp-dates">12/2022 – 11/2024</span>
+      </div>
+      <div class="exp-location">Kerala, India | Frontend Engineering &amp; UI Architecture</div>
+      <ul>
+        <li><strong>Enterprise Frontend Development:</strong> Built and maintained responsive, accessible web applications using <strong>Angular (8–15+), React.js, TypeScript, JavaScript</strong>, HTML5, and CSS3.</li>
+        <li><strong>Reusable Design Systems:</strong> Engineered reusable UI component libraries with <strong>PrimeNG, Angular Material, Chakra UI, and Bootstrap</strong>, ensuring design consistency across multi-module projects.</li>
+        <li><strong>Modular Architecture &amp; Performance:</strong> Structured applications with <strong>standalone components, route-level lazy loading</strong>, and Storybook documentation to enhance long-term maintainability.</li>
+        <li><strong>Predictable State Management:</strong> Managed complex client-side state, caching, and reactive data streams utilizing <strong>Redux and NgRx / RxJS</strong> with zero UI frame drops.</li>
+        <li><strong>REST API Integration:</strong> Integrated frontend clients with enterprise REST APIs, establishing token-based security, interceptors, and robust error handling boundaries.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="exp-header">
+        <div>
+          <span class="exp-company">UL Technology Solutions (ULTS)</span> &mdash; <span class="exp-role">Software Development Intern</span>
+        </div>
+        <span class="exp-dates">08/2022 – 11/2022</span>
+      </div>
+      <div class="exp-location">Kerala, India</div>
+      <ul>
+        <li>Assisted in developing responsive web interfaces using HTML, CSS, JavaScript, and Angular; translated design wireframes into accessible, cross-browser compliant layouts.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 2 ==================== -->
+  <div class="page page-break">
+    <!-- Key Enterprise Projects -->
+    <div class="section-title">Key Enterprise Projects (UL Technology Solutions)</div>
+
+    <!-- Project 1: K-SMART -->
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-title">1. K-SMART – Smart E-Governance Platform (Govt. of Kerala / LSGI)</span>
+        <span class="project-tech">React.js · Redux Saga · Tailwind CSS · Chakra UI · Java</span>
+      </div>
+      <div class="project-desc">
+        A flagship data-centric e-governance platform for Local Self-Government Institutions (LSGIs) in Kerala, transforming public service delivery across municipal corporations, municipalities, and grama panchayats.
+      </div>
+      <ul>
+        <li><strong>Citizen Services Architecture:</strong> Engineered scalable frontend modules for public grievance redressal, civil registrations (birth/death/marriage), trade licensing, and building permits.</li>
+        <li><strong>Asynchronous State Management:</strong> Architected complex, multi-step public application workflows and asynchronous side-effects using <strong>Redux Saga</strong> to handle peak citizen filing volumes.</li>
+        <li><strong>Accessible Design System:</strong> Developed a responsive, bilingual design system with <strong>Tailwind CSS and Chakra UI</strong> ensuring WCAG compliance across mobile and desktop devices.</li>
+        <li><strong>Enterprise API Contracts:</strong> Integrated frontend interfaces with high-performance Java REST microservices, handling schema validation, file uploads, and status tracking.</li>
+      </ul>
+    </div>
+
+    <!-- Project 2: UISP -->
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-title">2. Unified Identity Security Platform (UISP)</span>
+        <span class="project-tech">Next.js · React.js · Java · TypeScript · REST APIs · Docker</span>
+      </div>
+      <div class="project-desc">
+        A centralized enterprise identity governance and security platform designed to streamline multi-factor authentication, user identity governance, and access authorization across organizational systems.
+      </div>
+      <ul>
+        <li><strong>Centralized Access Governance:</strong> Built an intuitive administrative console implementing Role-Based Access Control (RBAC) and user identity lifecycle management.</li>
+        <li><strong>Modern Next.js Architecture:</strong> Leveraged <strong>Next.js</strong> for server-side rendering (SSR), route-level authentication guards, and secure HttpOnly cookie handling.</li>
+        <li><strong>Operational Audit Telemetry:</strong> Developed real-time security dashboards for monitoring active sessions, access anomaly flags, and compliance audit histories.</li>
+      </ul>
+    </div>
+
+    <!-- Project 3: HIMS -->
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-title">3. Hospital Information Management System (HIMS)</span>
+        <span class="project-tech">Angular 15 · PrimeNG · Python · TypeScript · RxJS · REST APIs</span>
+      </div>
+      <div class="project-desc">
+        A comprehensive clinical healthcare management solution overseeing patient lifecycles, electronic medical records (EMR), doctor consultations, pharmacy inventory, and hospital admissions.
+      </div>
+      <ul>
+        <li><strong>Clinical Data Workflows:</strong> Developed modules for inpatient/outpatient registration, clinical consultation notes, laboratory diagnostics, and electronic health record retrieval.</li>
+        <li><strong>Reactive Angular Architecture:</strong> Built high-performance clinical tables and scheduling views with <strong>Angular 15 Standalone components, PrimeNG, and RxJS</strong> data streams.</li>
+        <li><strong>Appointment &amp; Inventory Suite:</strong> Implemented real-time doctor availability calendars, automated appointment booking, and pharmacy dispensation tracking.</li>
+      </ul>
+    </div>
+
+    <!-- Project 4: KLM -->
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-title">4. KLM – File Management &amp; Approvals System</span>
+        <span class="project-tech">Angular 8 · HTML5 · CSS3 · Bootstrap · Java</span>
+      </div>
+      <div class="project-desc">
+        An integrated web application that manages document workflows, role-based document forwarding, and multi-tier approvals communicating across independent Angular micro-modules.
+      </div>
+      <ul>
+        <li>Designed file dispatch workflows allowing administrative users to forward, approve, reject, and annotate official documents with complete digital audit trails.</li>
+      </ul>
+    </div>
+
+    <!-- Project 5: HRMS -->
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-title">5. ULCCS – HRMS (Human Resource Management System)</span>
+        <span class="project-tech">Angular 8 · SCSS · Bootstrap · Java REST APIs</span>
+      </div>
+      <div class="project-desc">
+        Workforce administration platform automating employee recruitment, probation confirmation, promotions, leave tracking, overtime, and staff service operations.
+      </div>
+      <ul>
+        <li>Automated staff self-service requests and management approval hierarchies, digitizing operational workflows for corporate and field personnel.</li>
+      </ul>
+    </div>
+
+    <!-- Education -->
+    <div class="section-title">Education</div>
+    
+    <div class="edu-item">
+      <div>
+        <span class="edu-title">Master of Technology (M.Tech) in Communication Systems</span> &mdash; <span class="edu-inst">TKM College of Engineering, Kollam</span>
+        <div style="font-size: 8pt; color: #64748b;">Kerala, India &bull; Advanced Communication Networks, Signal Processing &amp; Algorithmic System Modeling</div>
+      </div>
+      <div style="text-align: right;">
+        <span class="edu-grade">CGPA: 8.76 / 10</span><br>
+        <span class="edu-dates">08/2017 – 06/2019</span>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div>
+        <span class="edu-title">Bachelor of Technology (B.Tech) in Electronics and Communication</span> &mdash; <span class="edu-inst">College of Engineering, Kottarakkara</span>
+        <div style="font-size: 8pt; color: #64748b;">Kerala, India &bull; Computer Networks, Microprocessor Architectures &amp; Software Engineering Fundamentals</div>
+      </div>
+      <div style="text-align: right;">
+        <span class="edu-grade">CGPA: 7.57 / 10</span><br>
+        <span class="edu-dates">08/2012 – 04/2016</span>
+      </div>
+    </div>
+
+    <!-- Professional Strengths -->
+    <div class="section-title">Professional Attributes &amp; Methodologies</div>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 8.5pt; color: #334155; margin-top: 4px;">
+      <span>✓ <strong>Agile &amp; Scrum Delivery:</strong> Sprint planning, daily standups, backlog refinement in Jira</span>
+      <span>✓ <strong>Code Quality:</strong> Clean code, SOLID principles, code reviews &amp; Vitest coverage</span>
+      <span>✓ <strong>Cross-Functional Collaboration:</strong> Product managers, UX designers, backend teams &amp; QA</span>
+    </div>
+
+  </div>
+
+</body>
+</html>
