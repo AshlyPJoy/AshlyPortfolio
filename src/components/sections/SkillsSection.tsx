@@ -9,6 +9,7 @@ import {
   Database,
   Wrench,
   CheckCircle2,
+  Sparkles,
 } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PORTFOLIO_DATA } from "@/data/portfolio-data";
@@ -50,15 +51,25 @@ function getSkillIcon(name: string) {
   if (n.includes("mongo")) return <MongoDBIcon className="w-4 h-4" />;
   if (n.includes("postman")) return <PostmanIcon className="w-4 h-4" />;
   if (n.includes("vs code")) return <VSCodeIcon className="w-4 h-4" />;
+  if (
+    n.includes("claude") ||
+    n.includes("chatgpt") ||
+    n.includes("gemini") ||
+    n.includes("copilot") ||
+    n.includes("antigravity")
+  ) {
+    return <Sparkles className="w-4 h-4 text-amber-400" />;
+  }
   return <Code className="w-4 h-4 text-sky-400" />;
 }
 
 function getCategoryIcon(title: string) {
   if (title.includes("Frontend")) return <Code className="w-4 h-4 text-sky-400" />;
   if (title.includes("Backend")) return <Server className="w-4 h-4 text-emerald-400" />;
-  if (title.includes("UI Frameworks")) return <Palette className="w-4 h-4 text-indigo-400" />;
+  if (title.includes("UI") || title.includes("Styling")) return <Palette className="w-4 h-4 text-indigo-400" />;
   if (title.includes("State")) return <Layers className="w-4 h-4 text-violet-400" />;
   if (title.includes("Database")) return <Database className="w-4 h-4 text-amber-400" />;
+  if (title.includes("AI")) return <Sparkles className="w-4 h-4 text-amber-400" />;
   return <Wrench className="w-4 h-4 text-cyan-400" />;
 }
 

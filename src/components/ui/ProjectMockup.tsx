@@ -1,12 +1,47 @@
 import React from "react";
-import { Landmark, Shield, HeartPulse, FileText, Users } from "lucide-react";
+import { Landmark, Shield, HeartPulse, FileText, Users, Boxes, Database } from "lucide-react";
 
 interface ProjectMockupProps {
-  type: "ksmart" | "uisp" | "hims" | "klm" | "hrms";
+  type: "ksmart" | "uisp" | "hims" | "klm" | "hrms" | "asset-nexus";
   title: string;
 }
 
 export function ProjectMockup({ type }: ProjectMockupProps) {
+  if (type === "asset-nexus") {
+    return (
+      <div className="w-full h-36 bg-slate-950 rounded-xl border border-slate-800/80 p-3.5 flex flex-col justify-between font-mono text-xs">
+        <div className="flex items-center justify-between text-[11px] text-slate-400">
+          <div className="flex items-center gap-1.5">
+            <Boxes className="w-3.5 h-3.5 text-cyan-400" />
+            <span className="font-semibold text-white">Asset Nexus Lifecycle</span>
+          </div>
+          <span className="text-[10px] text-cyan-400 font-sans font-medium px-1.5 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/20">
+            Next.js &bull; NestJS
+          </span>
+        </div>
+
+        <div className="grid grid-cols-3 gap-2 my-1 text-center font-sans">
+          <div className="p-2 rounded bg-slate-900 border border-slate-800/60">
+            <div className="text-[10px] text-slate-400">Tracking</div>
+            <div className="text-xs font-bold text-white">IT &bull; Hardware</div>
+          </div>
+          <div className="p-2 rounded bg-slate-900 border border-slate-800/60">
+            <div className="text-[10px] text-slate-400">Database</div>
+            <div className="text-xs font-bold text-sky-400">PostgreSQL</div>
+          </div>
+          <div className="p-2 rounded bg-slate-900 border border-slate-800/60">
+            <div className="text-[10px] text-slate-400">Deployment</div>
+            <div className="text-xs font-bold text-emerald-400">Docker &bull; RBAC</div>
+          </div>
+        </div>
+
+        <div className="text-[10px] text-slate-400 truncate">
+          Features: QR Verification &bull; Preventive Maintenance &bull; Depreciation &bull; OAuth2
+        </div>
+      </div>
+    );
+  }
+
   if (type === "ksmart") {
     return (
       <div className="w-full h-36 bg-slate-950 rounded-xl border border-slate-800/80 p-3.5 flex flex-col justify-between font-mono text-xs">
@@ -118,30 +153,30 @@ export function ProjectMockup({ type }: ProjectMockupProps) {
         <div className="flex items-center justify-between text-[11px] text-slate-400">
           <div className="flex items-center gap-1.5">
             <FileText className="w-3.5 h-3.5 text-amber-400" />
-            <span className="font-semibold text-white">KLM File Management</span>
+            <span className="font-semibold text-white">KLM ERP &amp; Approvals</span>
           </div>
           <span className="text-[10px] text-amber-400 font-sans font-medium px-1.5 py-0.5 rounded bg-amber-500/10 border border-amber-500/20">
-            Angular 8 &bull; Java
+            Angular 12 &bull; Java
           </span>
         </div>
 
         <div className="grid grid-cols-3 gap-2 my-1 text-center font-sans">
           <div className="p-2 rounded bg-slate-900 border border-slate-800/60">
-            <div className="text-[10px] text-slate-400">Doc Flow</div>
-            <div className="text-xs font-bold text-white">Role Routing</div>
+            <div className="text-[10px] text-slate-400">ERP Routing</div>
+            <div className="text-xs font-bold text-white">Doc Workflow</div>
           </div>
           <div className="p-2 rounded bg-slate-900 border border-slate-800/60">
-            <div className="text-[10px] text-slate-400">Approvals</div>
-            <div className="text-xs font-bold text-sky-400">Multi-tier</div>
+            <div className="text-[10px] text-slate-400">Governance</div>
+            <div className="text-xs font-bold text-sky-400">Multi-tier RBAC</div>
           </div>
           <div className="p-2 rounded bg-slate-900 border border-slate-800/60">
-            <div className="text-[10px] text-slate-400">Architecture</div>
-            <div className="text-xs font-bold text-emerald-400">Modular</div>
+            <div className="text-[10px] text-slate-400">Compliance</div>
+            <div className="text-xs font-bold text-emerald-400">Audit Trails</div>
           </div>
         </div>
 
         <div className="text-[10px] text-slate-400 truncate">
-          Features: Cross-Module Document Dispatch &bull; Status Audits &bull; Approvals
+          Features: Land Record Governance &bull; Cross-Module File Routing &bull; Digital Sign-offs
         </div>
       </div>
     );

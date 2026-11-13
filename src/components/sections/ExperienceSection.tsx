@@ -51,10 +51,10 @@ export function ExperienceSection() {
                     Key Contributions:
                   </h4>
                   <div className="grid sm:grid-cols-2 gap-2 text-xs text-slate-300">
-                    {exp.responsibilities.slice(0, 6).map((resp, i) => (
+                    {exp.responsibilities.map((resp, i) => (
                       <div key={i} className="flex items-start gap-2">
-                        <span className="text-sky-400 mt-0.5">&bull;</span>
-                        <span className="line-clamp-2">{resp}</span>
+                        <span className="text-sky-400 mt-0.5 shrink-0">&bull;</span>
+                        <span className="leading-relaxed">{resp}</span>
                       </div>
                     ))}
                   </div>
